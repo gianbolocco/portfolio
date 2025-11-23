@@ -1,12 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import { AppBar, Toolbar, Typography, Button, Box, Container, IconButton } from '@mui/material';
 import { useTheme } from '@mui/material/styles';
-import { Brightness4, Brightness7 } from '@mui/icons-material';
+import { Brightness4, Brightness7, Translate } from '@mui/icons-material';
 import { useColorMode } from '../ColorModeContext';
+import { useLanguage } from '../LanguageContext';
+import { t } from '../translations';
 
 const Header = (props) => {
     const theme = useTheme();
     const { toggleColorMode, mode } = useColorMode();
+    const { language, toggleLanguage } = useLanguage();
     const [scrolled, setScrolled] = useState(false);
 
     useEffect(() => {
@@ -24,11 +27,11 @@ const Header = (props) => {
     }, [scrolled]);
 
     const navItems = [
-        { label: 'Inicio', id: 'hero' },
-        { label: 'Sobre Mí', id: 'about' },
-        { label: 'Habilidades', id: 'skills' },
-        { label: 'Proyectos', id: 'projects' },
-        { label: 'Contacto', id: 'contact' },
+        { label: t(language, 'nav.inicio'), id: 'hero' },
+        { label: t(language, 'nav.sobreMi'), id: 'about' },
+        { label: t(language, 'nav.habilidades'), id: 'skills' },
+        { label: t(language, 'nav.proyectos'), id: 'projects' },
+
     ];
 
     const scrollToSection = (id) => {
@@ -81,6 +84,18 @@ const Header = (props) => {
                                 {item.label}
                             </Button>
                         ))}
+                        <Button
+                            sx={{
+                                ml: 2,
+                                color: 'text.primary',
+                                fontWeight: 600,
+                                minWidth: '50px',
+                                '&:hover': { bgcolor: 'rgba(66, 133, 244, 0.1)' }
+                            }}
+                            onClick={toggleLanguage}
+                        >
+                            {language === 'es' ? 'EN' : 'ES'}
+                        </Button>
                         <IconButton sx={{ ml: 2 }} onClick={toggleColorMode} color="inherit">
                             {theme.palette.mode === 'dark' ? <Brightness7 /> : <Brightness4 />}
                         </IconButton>

@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Container, Card, CardMedia, CardContent, Typography, Button, Box, Chip, useTheme } from '@mui/material';
 import { GitHub, Launch } from '@mui/icons-material';
+import { useLanguage } from '../LanguageContext';
+import { t } from '../translations';
 
 const projects = [
     {
@@ -33,7 +35,7 @@ const projects = [
         images: [
             'https://via.placeholder.com/600x400/9c27b0/ffffff?text=Portfolio+Hero',
             'https://via.placeholder.com/600x400/7b1fa2/ffffff?text=Portfolio+Projects',
-            'https://via.placeholder.com/600x400/4a148c/ffffff?text=Portfolio+Contact'
+
         ],
         tags: ['React', 'Three.js', 'MUI'],
         demoLink: '#',
@@ -45,6 +47,7 @@ const ProjectCard = ({ project }) => {
     const theme = useTheme();
     const isDark = theme.palette.mode === 'dark';
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
+    const { language } = useLanguage();
 
     useEffect(() => {
         const interval = setInterval(() => {
@@ -131,7 +134,7 @@ const ProjectCard = ({ project }) => {
                             '&:hover': { bgcolor: 'text.secondary' }
                         }}
                     >
-                        Ver Demo
+                        {t(language, 'projects.demo')}
                     </Button>
                     <Button
                         variant="outlined"
@@ -156,11 +159,13 @@ const ProjectCard = ({ project }) => {
 };
 
 const Projects = () => {
+    const { language } = useLanguage();
+
     return (
         <Box id="projects" sx={{ py: 10, bgcolor: 'background.default' }}>
             <Container maxWidth="lg">
                 <Typography variant="h2" component="h2" sx={{ mb: 6, fontWeight: 800, textAlign: 'center' }}>
-                    Proyectos Destacados
+                    {t(language, 'projects.title')}
                 </Typography>
                 <Box sx={{
                     display: 'flex',

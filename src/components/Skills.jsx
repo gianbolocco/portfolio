@@ -1,6 +1,8 @@
 import React from 'react';
 import { Container, Typography, Box, Grid, Paper, Chip, useTheme } from '@mui/material';
 import { Code, Storage, Build, Brush } from '@mui/icons-material';
+import { useLanguage } from '../LanguageContext';
+import { t } from '../translations';
 
 const skillCategories = [
     {
@@ -14,12 +16,12 @@ const skillCategories = [
         skills: ['Node.js', 'Express', 'Python', 'Django', 'PostgreSQL', 'MongoDB', 'Firebase', 'REST APIs']
     },
     {
-        title: 'Herramientas & DevOps',
+        title: 'Tools',
         icon: <Build />,
         skills: ['Git', 'Docker', 'AWS', 'Vercel', 'Jest', 'Webpack', 'Vite', 'CI/CD']
     },
     {
-        title: 'Diseño & Otros',
+        title: 'Design',
         icon: <Brush />,
         skills: ['Figma', 'Adobe XD', 'Responsive Design', 'UI/UX Principles', 'Agile/Scrum', 'SEO']
     }
@@ -28,12 +30,13 @@ const skillCategories = [
 const Skills = () => {
     const theme = useTheme();
     const isDark = theme.palette.mode === 'dark';
+    const { language } = useLanguage();
 
     return (
         <Box id="skills" sx={{ py: 10, bgcolor: 'background.default' }}>
             <Container maxWidth="lg">
                 <Typography variant="h2" component="h2" sx={{ mb: 6, fontWeight: 800, textAlign: 'center' }}>
-                    Habilidades Técnicas
+                    {t(language, 'skills.title')}
                 </Typography>
                 <Grid container spacing={4} alignItems="stretch">
                     {skillCategories.map((category, index) => (

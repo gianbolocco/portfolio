@@ -2,6 +2,8 @@ import React, { useRef, useMemo } from 'react';
 import { Box, Container, Typography, Button, Grid, useTheme } from '@mui/material';
 import { Canvas, useFrame, useThree } from '@react-three/fiber';
 import * as THREE from 'three';
+import { useLanguage } from '../LanguageContext';
+import { t } from '../translations';
 
 const GalaxyParticles = ({ count = 2000, mouse }) => {
     const mesh = useRef();
@@ -91,6 +93,7 @@ const GalaxyParticles = ({ count = 2000, mouse }) => {
 const Hero = () => {
     const mouse = useRef([0, 0]);
     const theme = useTheme();
+    const { language } = useLanguage();
 
     return (
         <Box
@@ -123,9 +126,9 @@ const Hero = () => {
                                     textShadow: theme.palette.mode === 'dark' ? '0 4px 20px rgba(0,0,0,0.5)' : 'none'
                                 }}
                             >
-                                Fullstack
+                                {t(language, 'hero.title')}
                                 <br />
-                                <Box component="span" sx={{ color: '#4285F4' }}>Developer</Box>
+                                <Box component="span" sx={{ color: '#4285F4' }}>{t(language, 'hero.titleHighlight')}</Box>
                             </Typography>
                             <Typography
                                 variant="h5"
@@ -138,7 +141,7 @@ const Hero = () => {
                                     textShadow: theme.palette.mode === 'dark' ? '0 2px 10px rgba(0,0,0,0.5)' : 'none'
                                 }}
                             >
-                                Creando experiencias digitales modernas y funcionales.
+                                {t(language, 'hero.subtitle')}
                             </Typography>
                             <Box sx={{ display: 'flex', gap: 2 }}>
                                 <Button
@@ -158,11 +161,13 @@ const Hero = () => {
                                     }}
                                     onClick={() => document.getElementById('projects').scrollIntoView({ behavior: 'smooth' })}
                                 >
-                                    Ver Proyectos
+                                    {t(language, 'hero.verProyectos')}
                                 </Button>
                                 <Button
                                     variant="outlined"
                                     size="large"
+                                    href="./CV-Gianlucca-Bolocco.pdf"
+                                    download="CV-Gianlucca-Bolocco.pdf"
                                     sx={{
                                         borderColor: 'text.primary',
                                         color: 'text.primary',
@@ -178,10 +183,9 @@ const Hero = () => {
                                             color: '#4285F4'
                                         }
                                     }}
-                                    href="/cv.pdf"
                                     target="_blank"
                                 >
-                                    Descargar CV
+                                    {t(language, 'hero.descargarCV')}
                                 </Button>
                             </Box>
                         </Box>
