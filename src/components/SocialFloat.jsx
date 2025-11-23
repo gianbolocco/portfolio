@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Box, IconButton, Tooltip, useTheme } from '@mui/material';
-import { GitHub, LinkedIn } from '@mui/icons-material';
+import { GitHub, LinkedIn, Download } from '@mui/icons-material';
 
 const SocialFloat = () => {
     const theme = useTheme();
@@ -20,6 +20,14 @@ const SocialFloat = () => {
             url: 'https://www.linkedin.com/in/gianlucca-bolocco-995bbb21b/',
             color: '#0A66C2',
             hoverColor: '#084d94'
+        },
+        {
+            name: 'Descargar CV',
+            icon: <Download />,
+            url: './CV-Gianlucca-Bolocco.pdf',
+            download: 'CV-Gianlucca-Bolocco.pdf',
+            color: '#4285F4',
+            hoverColor: '#3367D6'
         }
     ];
 
@@ -48,6 +56,7 @@ const SocialFloat = () => {
                 >
                     <IconButton
                         href={social.url}
+                        download={social.download}
                         target="_blank"
                         rel="noopener noreferrer"
                         sx={{

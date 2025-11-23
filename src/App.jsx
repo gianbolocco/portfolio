@@ -19,8 +19,8 @@ function AppContent() {
       <Header />
       <Hero />
       <About />
-      <Skills />
       <Projects />
+      <Skills />
 
       <SocialFloat />
       <Box component="footer" sx={{ py: 3, textAlign: 'center', opacity: 0.7 }}>

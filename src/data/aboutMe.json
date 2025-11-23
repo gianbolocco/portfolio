@@ -1,0 +1,26 @@
+{
+    "es": {
+        "title": "Sobre Mí",
+        "p1": "Soy estudiante avanzado de Ingeniería en Sistemas de Información en la UTN, con una pasión por convertir ideas en soluciones tecnológicas escalables. Tengo experiencia trabajando con React, JavaScript y Node.js, y me encanta enfrentar nuevos desafíos que me impulsen a aprender y crecer.",
+        "p2": "Curioso, proactivo y orientado al trabajo en equipo, siempre busco formas de mejorar y contribuir. Estoy listo para dar el salto a mi primer rol profesional, donde pueda aplicar mis conocimientos y seguir evolucionando en el dinámico mundo de TI.",
+        "whyWorkWithMe": "¿Por qué trabajar conmigo?",
+        "qualities": [
+            "Comunicación Clara",
+            "Código Limpio",
+            "Diseño Centrado en Usuario",
+            "Aprendizaje Continuo"
+        ]
+    },
+    "en": {
+        "title": "About Me",
+        "p1": "I'm an advanced Information Systems Engineering student at UTN with a passion for turning ideas into scalable tech solutions. I have experience working with React, JavaScript, and Node.js, and I thrive on diving into new challenges that push me to learn and grow.",
+        "p2": "Curious, proactive, and team-oriented, I am always seeking ways to improve and contribute. I am now ready to take the leap into my first professional role, where I can apply my knowledge and continue evolving in the fast-paced world of IT.",
+        "whyWorkWithMe": "Why work with me?",
+        "qualities": [
+            "Clear Communication",
+            "Clean Code",
+            "User-Centered Design",
+            "Continuous Learning"
+        ]
+    }
+}

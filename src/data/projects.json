@@ -1,0 +1,104 @@
+[
+    {
+        "title": "Tienda Sol",
+        "description": "Una plataforma de comercio electrónico completa con carrito de compras, pasarela de pagos y panel de administración.",
+        "images": [
+            "/img/projectsImg/tiendaSol/1.png",
+            "/img/projectsImg/tiendaSol/2.png",
+            "/img/projectsImg/tiendaSol/3.png"
+        ],
+        "tags": [
+            "React",
+            "Node.js",
+            "MongoDB",
+            "Express",
+            "Tailwind",
+            "Docker",
+            "Vite",
+            "Mongoose",
+            "JWT"
+        ],
+        "demoLink": "https://mern-ecommerce-tienda-sol.vercel.app/",
+        "githubLink": "https://github.com/gianbolocco/MERN-ecommerce-TiendaSol"
+    },
+    {
+        "title": "TP sistemas operativos",
+        "description": "Simulacion de un Sistema Operativo distribuido con módulos interconectados (Kernel, CPU, Memoria, FileSystem). Capaz de Gestionar recursos, ejecutar procesos y operaciones de archivos.",
+        "images": [
+            "img/projectsImg/tpso/1.png",
+            "img/projectsImg/tpso/2.png"
+        ],
+        "tags": [
+            "C",
+            "Linux",
+            "Multithreading",
+            "Algoritmos de planificacion",
+            "Gestión de memoria"
+        ],
+        "demoLink": "#",
+        "githubLink": "https://github.com/gianbolocco/TP-SistemasOperativos-UTNFRBA-20242C"
+    },
+    {
+        "title": "FootBall Quiz Trivia Game",
+        "description": "Un juego de trivia interactiva sobre la historia del fútbol, construido con React",
+        "images": [
+            "img/projectsImg/trivia/1.png"
+        ],
+        "tags": [
+            "React",
+            "Tailwind"
+        ],
+        "demoLink": "https://football-react-quizz-47n41metl-gianbolocco.vercel.app/",
+        "githubLink": "https://github.com/gianbolocco/football-react-quizz"
+    },
+    {
+        "title": "React E-commerce",
+        "description": "Una tienda de zapatillas completa con catálogo, carrito de compras y detalles de producto.",
+        "images": [
+            "/img/projectsImg/reactEcommerce/1.png",
+            "/img/projectsImg/reactEcommerce/2.png",
+            "/img/projectsImg/reactEcommerce/3.png",
+            "/img/projectsImg/reactEcommerce/4.png"
+        ],
+        "tags": [
+            "React",
+            "Firebase",
+            "CSS"
+        ],
+        "demoLink": "https://react-ecommerce-coderhouse.vercel.app/",
+        "githubLink": "https://github.com/gianbolocco/react-ecommerce-coderhouse"
+    },
+    {
+        "title": "Pokedex React",
+        "description": "Aplicación que permite buscar y ver detalles de Pokémon. Implementa paginación, búsqueda y consumo de la PokeAPI.",
+        "images": [
+            "/img/projectsImg/pokedex/1.png",
+            "/img/projectsImg/pokedex/2.png"
+        ],
+        "tags": [
+            "React",
+            "Context API",
+            "CSS",
+            "PokeAPI"
+        ],
+        "demoLink": "https://pokedex-react-ashen-two.vercel.app/",
+        "githubLink": "https://github.com/gianbolocco/Pokedex-React"
+    },
+    {
+        "title": "Compilador Lenguaje C",
+        "description": "Desarrollo incremental de un compilador para el lenguaje C, abarcando desde el análisis léxico hasta el análisis semántico.",
+        "images": [
+            "/img/projectsImg/compilador/1.jpg"
+        ],
+        "tags": [
+            "C",
+            "Lex",
+            "Yacc",
+            "Makefile",
+            "Bison",
+            "Flex"
+        ],
+        "demoLink": "#",
+        "githubLink": "https://github.com/gianbolocco/Compilador-Lenguaje-C-TP-Sintaxis-y-semantica-de-los-lenguajes-UTN-FRBA-2024"
+    }
+]

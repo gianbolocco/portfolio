@@ -17,18 +17,7 @@ export const translations = {
             descargarCV: 'Descargar CV',
         },
         // About
-        about: {
-            title: 'Sobre Mí',
-            p1: 'Soy un desarrollador Fullstack apasionado por crear soluciones digitales que impacten. Con una sólida base en tecnologías web modernas, me especializo en construir aplicaciones escalables y experiencias de usuario intuitivas.',
-            p2: 'Mi enfoque combina la precisión técnica con la creatividad visual. Me encanta resolver problemas complejos y mantenerme al día con las últimas tendencias en desarrollo de software.',
-            whyWorkWithMe: '¿Por qué trabajar conmigo?',
-            qualities: [
-                'Comunicación Clara',
-                'Código Limpio',
-                'Diseño Centrado en Usuario',
-                'Aprendizaje Continuo'
-            ]
-        },
+        about: {},
         // Skills
         skills: {
             title: 'Habilidades Técnicas',
@@ -73,18 +62,7 @@ export const translations = {
             descargarCV: 'Download CV',
         },
         // About
-        about: {
-            title: 'About Me',
-            p1: 'I am a Fullstack developer passionate about creating impactful digital solutions. With a solid foundation in modern web technologies, I specialize in building scalable applications and intuitive user experiences.',
-            p2: 'My approach combines technical precision with visual creativity. I love solving complex problems and keeping up with the latest trends in software development.',
-            whyWorkWithMe: 'Why work with me?',
-            qualities: [
-                'Clear Communication',
-                'Clean Code',
-                'User-Centered Design',
-                'Continuous Learning'
-            ]
-        },
+        about: {},
         // Skills
         skills: {
             title: 'Technical Skills',

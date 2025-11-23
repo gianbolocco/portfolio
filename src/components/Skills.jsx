@@ -3,29 +3,19 @@ import { Container, Typography, Box, Grid, Paper, Chip, useTheme } from '@mui/ma
 import { Code, Storage, Build, Brush } from '@mui/icons-material';
 import { useLanguage } from '../LanguageContext';
 import { t } from '../translations';
+import skillsData from '../data/skills.json';
 
-const skillCategories = [
-    {
-        title: 'Frontend',
-        icon: <Code />,
-        skills: ['React', 'Vue.js', 'Next.js', 'TypeScript', 'HTML5', 'CSS3/Sass', 'Material UI', 'Tailwind CSS']
-    },
-    {
-        title: 'Backend',
-        icon: <Storage />,
-        skills: ['Node.js', 'Express', 'Python', 'Django', 'PostgreSQL', 'MongoDB', 'Firebase', 'REST APIs']
-    },
-    {
-        title: 'Tools',
-        icon: <Build />,
-        skills: ['Git', 'Docker', 'AWS', 'Vercel', 'Jest', 'Webpack', 'Vite', 'CI/CD']
-    },
-    {
-        title: 'Design',
-        icon: <Brush />,
-        skills: ['Figma', 'Adobe XD', 'Responsive Design', 'UI/UX Principles', 'Agile/Scrum', 'SEO']
-    }
-];
+const iconMap = {
+    Code: <Code />,
+    Storage: <Storage />,
+    Build: <Build />,
+    Brush: <Brush />
+};
+
+const skillCategories = skillsData.map(category => ({
+    ...category,
+    icon: iconMap[category.iconName]
+}));
 
 const Skills = () => {
     const theme = useTheme();

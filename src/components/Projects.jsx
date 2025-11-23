@@ -3,45 +3,9 @@ import { Container, Card, CardMedia, CardContent, Typography, Button, Box, Chip,
 import { GitHub, Launch } from '@mui/icons-material';
 import { useLanguage } from '../LanguageContext';
 import { t } from '../translations';
+import projectsData from '../data/projects.json';
 
-const projects = [
-    {
-        title: 'E-commerce Platform',
-        description: 'Una plataforma de comercio electrónico completa con carrito de compras, pasarela de pagos y panel de administración.',
-        images: [
-            'https://via.placeholder.com/600x400/2196f3/ffffff?text=Ecommerce+Home',
-            'https://via.placeholder.com/600x400/1976d2/ffffff?text=Ecommerce+Cart',
-            'https://via.placeholder.com/600x400/0d47a1/ffffff?text=Ecommerce+Admin'
-        ],
-        tags: ['React', 'Node.js', 'MongoDB', 'Stripe'],
-        demoLink: 'https://tiendasool.netlify.app/',
-        githubLink: '#'
-    },
-    {
-        title: 'Task Management App',
-        description: 'Aplicación de gestión de tareas colaborativa con actualizaciones en tiempo real y asignación de roles.',
-        images: [
-            'https://via.placeholder.com/600x400/4caf50/ffffff?text=Tasks+Dashboard',
-            'https://via.placeholder.com/600x400/388e3c/ffffff?text=Tasks+Kanban',
-            'https://via.placeholder.com/600x400/1b5e20/ffffff?text=Tasks+Profile'
-        ],
-        tags: ['Vue.js', 'Firebase', 'Tailwind'],
-        demoLink: '#',
-        githubLink: '#'
-    },
-    {
-        title: 'Portfolio Website',
-        description: 'Este mismo sitio web, construido con las últimas tecnologías web y diseño 3D interactivo.',
-        images: [
-            'https://via.placeholder.com/600x400/9c27b0/ffffff?text=Portfolio+Hero',
-            'https://via.placeholder.com/600x400/7b1fa2/ffffff?text=Portfolio+Projects',
-
-        ],
-        tags: ['React', 'Three.js', 'MUI'],
-        demoLink: '#',
-        githubLink: '#'
-    }
-];
+const projects = projectsData;
 
 const ProjectCard = ({ project }) => {
     const theme = useTheme();
@@ -71,8 +35,9 @@ const ProjectCard = ({ project }) => {
                 border: `1px solid ${theme.palette.divider}`,
                 transition: 'transform 0.2s ease',
                 '&:hover': {
-                    transform: 'translateY(-4px)',
-                    borderColor: theme.palette.primary.main
+                    transform: 'translateY(-8px) scale(1.02)',
+                    borderColor: theme.palette.primary.main,
+                    boxShadow: '0 20px 40px rgba(0,0,0,0.2)'
                 },
                 overflow: 'hidden',
                 flexShrink: 0
@@ -121,37 +86,54 @@ const ProjectCard = ({ project }) => {
                     ))}
                 </Box>
                 <Box sx={{ display: 'flex', gap: 2 }}>
-                    <Button
-                        variant="contained"
-                        startIcon={<Launch />}
-                        fullWidth
-                        href={project.demoLink}
-                        target="_blank"
-                        sx={{
-                            fontWeight: 700,
-                            bgcolor: 'text.primary',
-                            color: 'background.paper',
-                            '&:hover': { bgcolor: 'text.secondary' }
-                        }}
-                    >
-                        {t(language, 'projects.demo')}
-                    </Button>
-                    <Button
-                        variant="outlined"
-                        startIcon={<GitHub />}
-                        fullWidth
-                        href={project.githubLink}
-                        target="_blank"
-                        sx={{
-                            fontWeight: 700,
-                            borderColor: 'text.primary',
-                            color: 'text.primary',
-                            borderWidth: 2,
-                            '&:hover': { borderWidth: 2, bgcolor: 'action.hover' }
-                        }}
-                    >
-                        GitHub
-                    </Button>
+                    {project.demoLink && project.demoLink !== '#' && (
+                        <Button
+                            variant="contained"
+                            startIcon={<Launch />}
+                            fullWidth
+                            href={project.demoLink}
+                            target="_blank"
+                            sx={{
+                                fontWeight: 700,
+                                bgcolor: 'text.primary',
+                                color: 'background.paper',
+                                transition: 'all 0.3s ease',
+                                '&:hover': {
+                                    bgcolor: 'primary.main',
+                                    color: '#fff',
+                                    transform: 'translateY(-4px) scale(1.05)',
+                                    boxShadow: '0 8px 20px rgba(0,0,0,0.3)'
+                                }
+                            }}
+                        >
+                            {t(language, 'projects.demo')}
+                        </Button>
+                    )}
+                    {project.githubLink && project.githubLink !== '#' && (
+                        <Button
+                            variant="outlined"
+                            startIcon={<GitHub />}
+                            fullWidth
+                            href={project.githubLink}
+                            target="_blank"
+                            sx={{
+                                fontWeight: 700,
+                                borderColor: 'text.primary',
+                                color: 'text.primary',
+                                borderWidth: 2,
+                                transition: 'all 0.3s ease',
+                                '&:hover': {
+                                    borderWidth: 2,
+                                    bgcolor: 'text.primary',
+                                    color: 'background.paper',
+                                    transform: 'translateY(-4px) scale(1.05)',
+                                    boxShadow: '0 8px 20px rgba(0,0,0,0.25)'
+                                }
+                            }}
+                        >
+                            GitHub
+                        </Button>
+                    )}
                 </Box>
             </CardContent>
         </Card>

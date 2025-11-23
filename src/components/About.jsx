@@ -1,11 +1,12 @@
 import React from 'react';
 import { Container, Grid, Typography, Box, useTheme } from '@mui/material';
 import { useLanguage } from '../LanguageContext';
-import { t, translations } from '../translations';
+import aboutMeData from '../data/aboutMe.json';
 
 const About = () => {
     const theme = useTheme();
     const { language } = useLanguage();
+    const content = aboutMeData[language];
 
     return (
         <Box id="about" sx={{ py: 10, bgcolor: 'background.paper' }}>
@@ -30,20 +31,20 @@ const About = () => {
                     </Grid>
                     <Grid item xs={12} md={6}>
                         <Typography variant="h2" component="h2" sx={{ mb: 4, fontWeight: 800 }}>
-                            {t(language, 'about.title')}
+                            {content.title}
                         </Typography>
                         <Typography variant="body1" paragraph sx={{ fontSize: '1.1rem', lineHeight: 1.8, color: 'text.secondary' }}>
-                            {t(language, 'about.p1')}
+                            {content.p1}
                         </Typography>
                         <Typography variant="body1" paragraph sx={{ fontSize: '1.1rem', lineHeight: 1.8, color: 'text.secondary' }}>
-                            {t(language, 'about.p2')}
+                            {content.p2}
                         </Typography>
                         <Box sx={{ mt: 4 }}>
                             <Typography variant="h6" sx={{ fontWeight: 700, mb: 2 }}>
-                                {t(language, 'about.whyWorkWithMe')}
+                                {content.whyWorkWithMe}
                             </Typography>
                             <Grid container spacing={2}>
-                                {translations[language].about.qualities.map((item) => (
+                                {content.qualities.map((item) => (
                                     <Grid item xs={6} key={item}>
                                         <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
                                             <Box sx={{ width: 8, height: 8, borderRadius: '50%', bgcolor: '#4285F4' }} />

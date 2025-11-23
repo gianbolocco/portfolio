@@ -1,0 +1,56 @@
+[
+    {
+        "title": "Frontend",
+        "iconName": "Code",
+        "skills": [
+            "React",
+            "Vue.js",
+            "Next.js",
+            "TypeScript",
+            "HTML5",
+            "CSS3/Sass",
+            "Material UI",
+            "Tailwind CSS"
+        ]
+    },
+    {
+        "title": "Backend",
+        "iconName": "Storage",
+        "skills": [
+            "Node.js",
+            "Express",
+            "Python",
+            "Django",
+            "PostgreSQL",
+            "MongoDB",
+            "Firebase",
+            "REST APIs"
+        ]
+    },
+    {
+        "title": "Tools",
+        "iconName": "Build",
+        "skills": [
+            "Git",
+            "Docker",
+            "AWS",
+            "Vercel",
+            "Jest",
+            "Webpack",
+            "Vite",
+            "CI/CD"
+        ]
+    },
+    {
+        "title": "Design",
+        "iconName": "Brush",
+        "skills": [
+            "Figma",
+            "Adobe XD",
+            "Responsive Design",
+            "UI/UX Principles",
+            "Agile/Scrum",
+            "SEO"
+        ]
+    }
+]
