@@ -101,5 +101,19 @@
         ],
         "demoLink": "#",
         "githubLink": "https://github.com/gianbolocco/Compilador-Lenguaje-C-TP-Sintaxis-y-semantica-de-los-lenguajes-UTN-FRBA-2024"
+    },
+    {
+        "title": "Moovie land",
+        "description": "Movie Land es una plataforma simple para explorar información básica sobre películas. Puedes buscar películas por palabra clave, y se mostrarán resultados con información como el título, año y categoría.",
+        "images": [
+            "/img/projectsImg/movieland/1.png"
+        ],
+        "tags": [
+            "OMDb API",
+            "React",
+            "Tailwind"
+        ],
+        "demoLink": "https://movie-land-pied-ten.vercel.app/",
+        "githubLink": "https://github.com/gianbolocco/movie-land/tree/main"
     }
 ]
