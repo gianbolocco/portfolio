@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Typography, Box, Grid, Paper, Chip, useTheme } from '@mui/material';
-import { Code, Storage, Build, Brush } from '@mui/icons-material';
+import { Code, Storage, Build, Brush, BugReport } from '@mui/icons-material';
 import { useLanguage } from '../LanguageContext';
 import { t } from '../translations';
 import skillsData from '../data/skills.json';
@@ -9,7 +9,8 @@ const iconMap = {
     Code: <Code />,
     Storage: <Storage />,
     Build: <Build />,
-    Brush: <Brush />
+    Brush: <Brush />,
+    BugReport: <BugReport />
 };
 
 const skillCategories = skillsData.map(category => ({

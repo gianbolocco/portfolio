@@ -26,7 +26,8 @@ export const translations = {
                 frontend: 'Frontend',
                 backend: 'Backend',
                 database: 'Base de Datos',
-                tools: 'Herramientas'
+                tools: 'Herramientas',
+                testing: 'Testing'
             }
         },
         // Projects
@@ -79,7 +80,8 @@ export const translations = {
                 frontend: 'Frontend',
                 backend: 'Backend',
                 database: 'Database',
-                tools: 'Tools'
+                tools: 'Tools',
+                testing: 'Testing'
             }
         },
         // Projects

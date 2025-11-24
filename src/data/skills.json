@@ -19,8 +19,6 @@
         "skills": [
             "Node.js",
             "Express",
-            "Python",
-            "Django",
             "PostgreSQL",
             "MongoDB",
             "Firebase",
@@ -35,10 +33,7 @@
             "Docker",
             "AWS",
             "Vercel",
-            "Jest",
-            "Webpack",
-            "Vite",
-            "CI/CD"
+            "Vite"
         ]
     },
     {
@@ -46,11 +41,19 @@
         "iconName": "Brush",
         "skills": [
             "Figma",
-            "Adobe XD",
             "Responsive Design",
             "UI/UX Principles",
-            "Agile/Scrum",
             "SEO"
+        ]
+    },
+    {
+        "title": "Testing",
+        "iconName": "BugReport",
+        "skills": [
+            "Jest",
+            "Cypress",
+            "JUnit",
+            "CI/CD"
         ]
     }
 ]

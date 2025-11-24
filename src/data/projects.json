@@ -14,7 +14,8 @@
             "Express",
             "Tailwind",
             "Docker",
-            "Vite",
+            "jest",
+            "cypress",
             "Mongoose",
             "JWT"
         ],

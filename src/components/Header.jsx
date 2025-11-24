@@ -29,8 +29,8 @@ const Header = (props) => {
     const navItems = [
         { label: t(language, 'nav.inicio'), id: 'hero' },
         { label: t(language, 'nav.sobreMi'), id: 'about' },
-        { label: t(language, 'nav.habilidades'), id: 'skills' },
         { label: t(language, 'nav.proyectos'), id: 'projects' },
+        { label: t(language, 'nav.habilidades'), id: 'skills' },
 
     ];
 
