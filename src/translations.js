@@ -38,7 +38,15 @@ export const translations = {
             tecnologias: 'Tecnologías'
         },
         // Contact
-
+        contact: {
+            title: 'Contacto',
+            phone: 'Teléfono',
+            email: 'Email',
+            location: 'Ubicación',
+            copy: 'Copiar',
+            copied: '¡Copiado al portapapeles!',
+            visit: 'Visitar perfil'
+        },
         // Footer
         footer: {
             derechos: 'Todos los derechos reservados.'
@@ -83,7 +91,15 @@ export const translations = {
             tecnologias: 'Technologies'
         },
         // Contact
-
+        contact: {
+            title: 'Contact',
+            phone: 'Phone',
+            email: 'Email',
+            location: 'Location',
+            copy: 'Copy',
+            copied: 'Copied to clipboard!',
+            visit: 'Visit profile'
+        },
         // Footer
         footer: {
             derechos: 'All rights reserved.'

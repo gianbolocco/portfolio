@@ -8,6 +8,7 @@ import Hero from './components/Hero';
 import About from './components/About';
 import Skills from './components/Skills';
 import Projects from './components/Projects';
+import Contact from './components/Contact';
 
 import SocialFloat from './components/SocialFloat';
 
@@ -21,6 +22,7 @@ function AppContent() {
       <About />
       <Projects />
       <Skills />
+      <Contact />
 
       <SocialFloat />
       <Box component="footer" sx={{ py: 3, textAlign: 'center', opacity: 0.7 }}>
