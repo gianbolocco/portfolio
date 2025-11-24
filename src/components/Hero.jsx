@@ -130,19 +130,6 @@ const Hero = () => {
                                 <br />
                                 <Box component="span" sx={{ color: '#4285F4' }}>{t(language, 'hero.titleHighlight')}</Box>
                             </Typography>
-                            <Typography
-                                variant="h5"
-                                color="text.secondary"
-                                sx={{
-                                    mb: 4,
-                                    maxWidth: '600px',
-                                    fontWeight: 400,
-                                    lineHeight: 1.6,
-                                    textShadow: theme.palette.mode === 'dark' ? '0 2px 10px rgba(0,0,0,0.5)' : 'none'
-                                }}
-                            >
-                                {t(language, 'hero.subtitle')}
-                            </Typography>
                             <Box sx={{ display: 'flex', gap: 2 }}>
                                 <Button
                                     variant="contained"

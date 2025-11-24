@@ -31,7 +31,7 @@ const Header = (props) => {
         { label: t(language, 'nav.sobreMi'), id: 'about' },
         { label: t(language, 'nav.proyectos'), id: 'projects' },
         { label: t(language, 'nav.habilidades'), id: 'skills' },
-
+        { label: t(language, 'nav.contacto'), id: 'contact' },
     ];
 
     const scrollToSection = (id) => {

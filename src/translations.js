@@ -6,13 +6,12 @@ export const translations = {
             sobreMi: 'Sobre Mí',
             habilidades: 'Habilidades',
             proyectos: 'Proyectos',
-
+            contacto: 'Contacto',
         },
         // Hero
         hero: {
-            title: 'Fullstack',
-            titleHighlight: 'Developer',
-            subtitle: 'Creando experiencias digitales modernas y funcionales.',
+            title: 'Gianlucca',
+            titleHighlight: 'Bolocco',
             verProyectos: 'Ver Proyectos',
             descargarCV: 'Descargar CV',
         },
@@ -60,13 +59,12 @@ export const translations = {
             sobreMi: 'About Me',
             habilidades: 'Skills',
             proyectos: 'Projects',
-
+            contacto: 'Contact',
         },
         // Hero
         hero: {
-            title: 'Fullstack',
-            titleHighlight: 'Developer',
-            subtitle: 'Creating modern and functional digital experiences.',
+            title: 'Gianlucca',
+            titleHighlight: 'Bolocco',
             verProyectos: 'View Projects',
             descargarCV: 'Download CV',
         },
